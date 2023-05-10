@@ -1,0 +1,223 @@
+
+/***
+* Default style for FastCore - 2020
+* Powered by Jumast - jumast@ya.ru
+***/
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f4f6f6;
+	color: #333a4d;
+}
+.navbar-dark {
+	background-color: #333a4d !important;
+
+}
+
+i.fa {font-size: 95%;}
+
+.wrapper {
+	padding: 15px;
+	background-color: #fff;
+	border: 1px #e2e8f0 solid;
+	border-radius: 1em;
+}
+
+.jumbotron {
+	background-color: #e2e8f0;
+	border-radius: 0.75em;
+}
+.card {
+
+	border: 1px #e2e8f0 solid;
+}
+
+.card-header {
+	background-color: rgba(20,30,60,.03);
+}
+
+.btn-outline-dark {
+	color: #333a4d;
+	border: 1px #435a6d solid !important;
+}
+
+/* ACCOUNT STYLE */
+.content {
+	float: left;
+	display: block;
+	width: calc(100% - 300px);
+}
+.content > div {
+	margin: 5px; padding: 15px;
+	background-color: #fff;
+	border: 1px #e2e8f0 solid;
+	border-radius: 1em;
+}
+
+.leftbar {
+	border-radius: 1em;
+	background-color: #333a4d !important;
+	width: 290px;
+	margin: 5px;
+	display: block;
+	float: left;
+}
+.leftbar .menubar {
+	border-radius: 1em;
+}
+.leftbar__menu {
+	padding: 2px;
+}
+.leftbar__menu li {
+	display: block;
+}
+.leftbar_head {
+	font-weight: 700;
+	text-transform:uppercase;
+	padding: 5px 0 7px 14px;
+}
+.leftbar__menu li a {
+	color: #fff;
+	display: block;text-transform:uppercase;
+	text-decoration: none;padding: 7px 5px;
+	margin: 2px 5px;border-radius: 1.3em;
+}
+
+.leftbar__menu li a:hover {
+	color: #abc;
+	background-color: rgba(245,250,255,0.03) !important;
+}
+
+.leftbar__menu li a i {
+	color: #abc;
+	position: relative;
+	margin-right: 5px;
+	width: 32px; padding: 5px; text-align: center;
+}
+
+/*MENU V KABINE*/
+.divide {
+	border-top: 1px dashed rgba(70, 60, 50, 0.2);
+}
+.menu-title {
+	padding: 5px 10px;
+	color: #abc;
+}
+
+.menu2 {
+	color: #abc;
+	padding-left: 20px;
+	font-size: 24px;
+	font-weight:600;
+	line-height: 28px;
+	cursor: pointer;
+}
+.menu2 i {
+	position: relative; margin-right: 15px;
+}
+
+.menub{
+	width: 96.8%;margin: -3px; margin-left: 5px; 
+	border-top: 1px dashed rgba(70, 60, 50, 0.2) !important;
+	padding: 4px 5px 4px 5px; 
+}
+.topbar{
+	padding: 5px;margin: 5px 5px 0;
+}
+.topbar__top {
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.topbar__btns {
+  margin-top: 15px;
+}
+.topbar__btn {
+  margin: 0 10px;
+}
+.topbar__bottom {
+  text-align: center;
+}
+.topbar__balance {
+	background-color: rgba(245,250,255,0.03) !important;
+	padding: 5px;
+	margin-bottom: 7px;
+	border-radius: 1em;
+}
+.topbar__balance p {
+	color: #abc;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0;
+	line-height: 1.4em;
+}
+.topbar__balance p b{
+	font-size: 26px;
+	color: #f7f7f7;
+}
+
+.topbar__balance a {
+	font-size: 12px;
+	letter-spacing: .75px;
+	color: #fff;
+	transition: color 0.2s ease;
+}
+.leftbar__menu li a {
+	padding-left: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.leftbar__menu li a span {
+	padding-right: 15px;
+}
+
+.menu2 {
+	display: none;
+}
+
+@media only screen and (max-width: 791px) {
+.content, .leftbar {
+	width: 100%;
+	float: none;
+	margin: 0;
+}
+.menu__wrapper {
+	max-height: 0;
+	overflow: hidden;
+	transition: 0.2s ease;
+}
+.menu2 {
+	display: block;
+}
+html.min-menu .content {
+	width: 100%;
+	float: none;
+	margin-left: 0;
+}
+html.min-menu .menu2 span {
+	opacity: 1;
+}
+html.min-menu .leftbar {
+	float: none;
+	width: 100%;
+}
+html.min-menu .topbar {
+	display: block;
+}
+html.min-menu .menu__wrapper {
+	max-height: 1300px;
+}
+html.min-menu .leftbar__menu li a span {
+	display: inline;
+}
+html.min-menu .leftbar_head {
+	display: block;
+}
+html.min-menu .leftbar__menu li a:hover {
+	width: 100%;
+}
+}
