@@ -45,6 +45,7 @@ $GLOBALS['routes'] = array(
 
     # Админка
     '/' . $adm . '' => 'login.php', // Вход
+    '/' . $adm . '/exit' => 'main.php', // Выход
     '/' . $adm . '' => 'main.php', // Главная
     '/' . $adm . '/' => 'main.php', // Главная слеш
     '/' . $adm . '/config' => 'config.php', // Настройки

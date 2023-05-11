@@ -2,6 +2,13 @@
     exit('Opss!');
 }
 
+# Пользователь вышел
+if (isset($pg->segment[1]) && $pg->segment[1] === 'exit') {
+    session_destroy();
+    header('Location: /' . $adm);
+    return;
+}
+
 # Статистика
 $stats = $db->query("SELECT * FROM db_stats WHERE id = '1'")->fetchArray();
 
