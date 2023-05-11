@@ -35,7 +35,7 @@ $opt = array();
 
 # Константа для Include
 const FastCore = true;
-const FastCoreVersion = '0.9.0';
+const FastCoreVersion = '0.9.1';
 
 # Система
 spl_autoload_register(static function ($lfc) {
