@@ -1,6 +1,6 @@
 <?php
-header('Location: /'); return;
+header('Location: /');
+return;
 /**
-  * Сокрытие директории файлом index.php либо .htaccess
+ * Сокрытие директории файлом index.php либо .htaccess
  */
-?>

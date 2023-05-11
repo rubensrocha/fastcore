@@ -2,8 +2,8 @@
 # Заголовки
 $opt = array(
 'title' => 'Поддержка',
-'keywords' => 'скрипт, хайпы, игры, бонусы, серфинги, php7, apache, nginx',
-'description' => 'Супербыстрый скрипт для создания сайтов php7, mysqli, utf-8, apache, nginx'
+'keywords' => 'скрипт, хайпы, игры, бонусы, серфинги, php8, apache, nginx',
+'description' => 'Супербыстрый скрипт для создания сайтов php8, mysqli, utf-8, apache, nginx'
 );
 
 ?>

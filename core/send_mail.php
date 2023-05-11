@@ -1,18 +1,24 @@
-<?php if(!defined('FastCore')){echo ('Выявлена попытка взлома!');exit();}
+<?php if (!defined('FastCore')) {
+    echo('Выявлена попытка взлома!');
+    exit();
+}
+include_once 'config.php';
 
+$config = new config();
 
-$domain = str_replace("www.","",$_SERVER['HTTP_HOST']);
-$send_email = 'support@'.$domain.'';
+$send_email = $config->email;
 
-define("MAILSITENAME", ''.$domains.'');
+define("MAILSITENAME", '' . $config->email_domain . '');
 define("MAILCHARSET", "utf8");
-define("MAILADMIN",''.$send_email.'');
+define("MAILADMIN", '' . $send_email . '');
 
-class send_mail {
-    var $send_error = TRUE; // Вывод ошибки
+class send_mail
+{
+    var bool $send_error = TRUE; // Вывод ошибки
 
-   # Создание заголовков
-    function compile_headers() {
+    # Создание заголовков
+    function compile_headers()
+    {
         $this->subject = "=?" . MAILCHARSET . "?b?" . base64_encode($this->subject) . "?=";
         $from = "=?" . MAILCHARSET . "?b?" . base64_encode(MAILSITENAME) . "?=";
         $this->mail_headers = "MIME-Version: 1.0" . "\n";
@@ -24,16 +30,17 @@ class send_mail {
         $this->mail_headers .= "X-Priority: 3" . "\n";
         $this->mail_headers .= "X-Mailer: PHP" . "\n";
     }
-   # Функция оправки сообщения
-    function send($to, $subject, $message) {
+
+    # Функция оправки сообщения
+    function send($to, $subject, $message)
+    {
         $this->to = $to;
         $this->subject = $subject;
         $this->compile_headers();
         if ($this->to && MAILADMIN && $this->subject) {
-            if(!@mail($this->to, $this->subject, $message, $this->mail_headers)) {
+            if (!@mail($this->to, $this->subject, $message, $this->mail_headers)) {
                 $this->send_error = true;
             }
         }
     }
 }
-?>

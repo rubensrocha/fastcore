@@ -146,6 +146,7 @@ CREATE TABLE `db_insert` (
   `sum_x` float(10,2) NOT NULL DEFAULT '0',
   `sys` varchar(20) NOT NULL,
   `status` int(11) NOT NULL,
+  `operation_id` bigint(20) NOT NULL,
   `add` int(11) NOT NULL DEFAULT '0',
   `end` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
@@ -194,7 +195,7 @@ INSERT INTO `db_stats` VALUES (1,0,0.00,0.00);
 CREATE TABLE `db_restore` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `email` varchar(50) NOT NULL,
-  `ip` int(11) NOT NULL,
+  `ip` bigint(11) NOT NULL,
   `date_add` int(11) NOT NULL,
   `date_del` int(11) NOT NULL,
   PRIMARY KEY (`id`)
@@ -237,8 +238,8 @@ CREATE TABLE `db_users` (
   `referer` varchar(30) NOT NULL DEFAULT '',
   `rid` int(11) NOT NULL DEFAULT '0',
   `refs` int(11) NOT NULL DEFAULT '0',
-  `income` float(10,2) NOT NULL,
-  `ref_to` float(10,2) NOT NULL,
+  `income` float(10,2) NOT NULL DEFAULT '0',
+  `ref_to` float(10,2) NOT NULL DEFAULT '0',
   `point` double(10,2) NOT NULL DEFAULT '0.00',
   `rating` double(10,2) NOT NULL DEFAULT '0.00',
   `role` int(1) NOT NULL DEFAULT '1',

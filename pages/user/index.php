@@ -1,6 +1,6 @@
 <?php
-header('Location: /user/dashboard'); return;
+header('Location: /user/dashboard');
+return;
 /**
-  * Сокрытие директории файлом index.php либо .htaccess
+ * Сокрытие директории файлом index.php либо .htaccess
  */
-?>
