@@ -39,11 +39,11 @@ This is a modified version of the russian FastCore script.
 - **Fail**: /user/fail
 
 ## Tasks
--[x] Compatibility with PHP 8.0
--[x] Code re-indentation
--[x] Code cleanup
--[x] Bug Fixes
--[x] Added: Semantic Versioning
+- [x] Compatibility with PHP 8.0
+- [x] Code re-indentation
+- [x] Code cleanup
+- [x] Bug Fixes
+- [x] Added: Semantic Versioning
 
 ## Contribute
 You can contribute to this project:
