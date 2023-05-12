@@ -1,4 +1,10 @@
 # FastCore Script
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/rubensrocha/fastcore)
+![GitHub language count](https://img.shields.io/github/languages/count/rubensrocha/fastcore)
+![GitHub top language](https://img.shields.io/github/languages/top/rubensrocha/fastcore)
+![GitHub issues](https://img.shields.io/github/issues/rubensrocha/fastcore)
+
+
 This is a modified version of the russian FastCore script.
 
 ## Table of contents
